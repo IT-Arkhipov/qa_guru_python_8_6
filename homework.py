@@ -79,7 +79,9 @@ def test_readable_function():
 
 def func_name_with_arguments(*args):
     func_name, *arguments = args
-    return f"{' '.join(func_name.split('_')).title()} [{', '.join(arguments)}]"
+    result = f"{' '.join(func_name.split('_')).title()} [{', '.join(arguments)}]"
+    print(result)
+    return result
 
 
 
